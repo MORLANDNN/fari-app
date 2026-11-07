@@ -4,6 +4,7 @@ import { defineConfig } from "vitest/config";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/fari-app/",
   define: {
     "process.env.npm_package_version": JSON.stringify(
       process.env.npm_package_version
