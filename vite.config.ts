@@ -2,7 +2,6 @@ import legacy from "@vitejs/plugin-legacy";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vitest/config";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   base: "/fari-app/",
   define: {
@@ -23,9 +22,7 @@ export default defineConfig({
       "/.netlify/functions/auth": "http://localhost:9999",
     },
   },
-  optimizeDeps: {
-    // disabled: false,
-  },
+  optimizeDeps: {},
   test: {
     globals: true,
     globalSetup: ["global-test-setup.ts"],
